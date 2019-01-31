@@ -1,13 +1,16 @@
 drop database if exists oozie;
 create database oozie;
+
+grant all privileges on oozie.* to 'oozie'@'%';
+
 grant all privileges on oozie.* to 'oozie'@'localhost' identified by 'oozie';
 grant all privileges on oozie.* to 'oozie'@'%' identified by 'oozie';
 
 drop database if exists studio;
 create database studio CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
 
-grant all privileges on studio.* to 'root'@'localhost' identified by '111111';
-grant all privileges on studio.* to 'root'@'%' identified by '111111';
+grant all privileges on studio.* to 'root'@'localhost' identified by 'password';
+grant all privileges on studio.* to 'root'@'%' identified by 'password';
 
 drop database if exists test;
 create database test CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';

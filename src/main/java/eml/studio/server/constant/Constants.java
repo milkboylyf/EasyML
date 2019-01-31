@@ -96,7 +96,7 @@ public class Constants {
 			}
 
 		}
-		DB_URL="jdbc:mysql://"+DB_HOST+":"+DB_PORT+"/"+DB_NAME+"?useUnicode=true&amp;characterEncoding=UTF-8";
+		DB_URL="jdbc:mysql://"+DB_HOST+":"+DB_PORT+"/"+DB_NAME+"?serverTimezone=GMT%2B8";
 	
 		//Tensorflow file reader
 		try {
